@@ -29,7 +29,6 @@ public class InitializedData {
                 .password("123456")
                 .email("email@gmail.com")
                 .foundationDate(LocalDate.of(2005,1,1))
-                .avatar(null)
                 .build();
         RecordCompany recordCompany2 = RecordCompany.builder()
                 .id(2L)
@@ -37,7 +36,6 @@ public class InitializedData {
                 .password("123456")
                 .email("WarnerMusicGroup@gmail.com")
                 .foundationDate(LocalDate.of(2010,2,2))
-                .avatar(getResourceAsByteArray("avatar/2.png"))
                 .build();
         RecordCompany recordCompany3 = RecordCompany.builder()
                 .id(3L)
@@ -45,7 +43,6 @@ public class InitializedData {
                 .password("123456")
                 .email("IslandRecordsl@gmail.com")
                 .foundationDate(LocalDate.of(2012,3,3))
-                .avatar(getResourceAsByteArray("avatar/3.png"))
                 .build();
         recordCompanyService.create(recordCompany);
         recordCompanyService.create(recordCompany2);

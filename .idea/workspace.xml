@@ -14,8 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999e7765-71d9-44a0-a49b-022fe1aad3f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/configuration/InitializedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/configuration/InitializedData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/entity/RecordCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/entity/RecordCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/service/RecordCompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/service/RecordCompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/servlet/RecordCompanyAvatarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/servlet/RecordCompanyAvatarServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +106,7 @@
       <workItem from="1602495799848" duration="3679000" />
       <workItem from="1602613797943" duration="1213000" />
       <workItem from="1602684535436" duration="5072000" />
-      <workItem from="1602690532231" duration="3304000" />
+      <workItem from="1602690532231" duration="6254000" />
     </task>
     <servers />
   </component>
@@ -135,22 +138,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602690509950" />
-    <state width="1877" height="276" key="GridCell.Tab.0.bottom" timestamp="1602693414136">
+    <state width="1877" height="276" key="GridCell.Tab.0.bottom" timestamp="1602697089938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602693414136" />
-    <state width="1877" height="276" key="GridCell.Tab.0.center" timestamp="1602693414136">
+    <state width="1877" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602697089938" />
+    <state width="1877" height="276" key="GridCell.Tab.0.center" timestamp="1602697089938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602693414136" />
-    <state width="1877" height="276" key="GridCell.Tab.0.left" timestamp="1602693414136">
+    <state width="1877" height="276" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602697089938" />
+    <state width="1877" height="276" key="GridCell.Tab.0.left" timestamp="1602697089938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602693414136" />
-    <state width="1877" height="276" key="GridCell.Tab.0.right" timestamp="1602693414136">
+    <state width="1877" height="276" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602697089938" />
+    <state width="1877" height="276" key="GridCell.Tab.0.right" timestamp="1602697089938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602693414136" />
+    <state width="1877" height="276" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602697089938" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1602436225703">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -159,6 +162,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602427830445" />
+    <state width="498" height="488" key="SwitcherDM" timestamp="1602695829870">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="488" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602695829870" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1602425058414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

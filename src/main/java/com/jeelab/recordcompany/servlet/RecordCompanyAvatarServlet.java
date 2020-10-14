@@ -13,7 +13,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import javax.ws.rs.core.HttpHeaders;
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.Optional;
 
 @WebServlet(urlPatterns = RecordCompanyAvatarServlet.Paths.AVATARS + "/*")
@@ -21,9 +24,13 @@ import java.util.Optional;
 public class RecordCompanyAvatarServlet extends HttpServlet {
 
     private RecordCompanyService service;
+    private String directory;
 
     @Inject
-    public RecordCompanyAvatarServlet(RecordCompanyService service) { this.service = service; }
+    public RecordCompanyAvatarServlet(RecordCompanyService service) {
+        this.service = service;
+        this.directory = "D:/_Projekty/JEELabImages";
+    }
 
     public static class Paths {
         public static final String AVATARS = "/api/avatars";
@@ -92,10 +99,11 @@ public class RecordCompanyAvatarServlet extends HttpServlet {
     private void getAvatar(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Long id = Long.parseLong(ServletUtility.parseRequestPath(request).replaceAll("/", ""));
         Optional<RecordCompany> recordCompany = service.find(id);
-        if(recordCompany.isPresent() && recordCompany.get().getAvatar() != null) {
+        Path path = java.nio.file.Paths.get(directory + "/" + id + ".png");
+        if(recordCompany.isPresent() && Files.exists(path)) {
             response.addHeader(HttpHeaders.CONTENT_TYPE, "image/png");
-            response.setContentLength(recordCompany.get().getAvatar().length);
-            response.getOutputStream().write(recordCompany.get().getAvatar());
+            response.setContentLength(Files.readAllBytes(path).length);
+            response.getOutputStream().write(Files.readAllBytes(path));
         } else {
             response.sendError(HttpServletResponse.SC_NOT_FOUND);
         }
@@ -104,13 +112,14 @@ public class RecordCompanyAvatarServlet extends HttpServlet {
     private void postAvatar(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         Long id = Long.parseLong(ServletUtility.parseRequestPath(request).replaceAll("/", ""));
         Optional<RecordCompany> recordCompany = service.find(id);
+        Path path = java.nio.file.Paths.get(directory + "/" + id + ".png");
         if(recordCompany.isPresent()){
             Part avatar = request.getPart(Param.AVATAR);
             if(avatar != null) {
-                if(recordCompany.get().getAvatar() == null) {
-                    service.updateAvatar(id, avatar.getInputStream());
+                if(!Files.exists(path)) {
+                    service.postAvatar(path, avatar.getInputStream());
                 } else {
-                    response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+                    response.sendError(HttpServletResponse.SC_BAD_REQUEST);
                 }
             } else {
                 response.setStatus(HttpServletResponse.SC_NO_CONTENT);
@@ -123,10 +132,15 @@ public class RecordCompanyAvatarServlet extends HttpServlet {
     private void putAvatar(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         Long id = Long.parseLong(ServletUtility.parseRequestPath(request).replaceAll("/", ""));
         Optional<RecordCompany> recordCompany = service.find(id);
+        Path path = java.nio.file.Paths.get(directory + "/" + id + ".png");
         if(recordCompany.isPresent()){
             Part avatar = request.getPart(Param.AVATAR);
             if(avatar != null) {
-                service.updateAvatar(id, avatar.getInputStream());
+                if(Files.exists(path)) {
+                    service.updateAvatar(path, avatar.getInputStream());
+                } else {
+                    response.sendError(HttpServletResponse.SC_BAD_REQUEST);
+                }
             } else {
                 response.setStatus(HttpServletResponse.SC_NO_CONTENT);
             }
@@ -138,8 +152,9 @@ public class RecordCompanyAvatarServlet extends HttpServlet {
     private void deleteAvatar(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Long id = Long.parseLong(ServletUtility.parseRequestPath(request).replaceAll("/", ""));
         Optional<RecordCompany> recordCompany = service.find(id);
-        if(recordCompany.isPresent() && recordCompany.get().getAvatar() != null){
-            service.deleteAvatar(id);
+        Path path = java.nio.file.Paths.get(directory + "/" + id + ".png");
+        if(recordCompany.isPresent() && Files.exists(path)){
+            service.deleteAvatar(path);
         } else {
             response.sendError(HttpServletResponse.SC_NOT_FOUND);
         }

@@ -18,5 +18,4 @@ public class RecordCompany implements Serializable {
     private String password;
     private String email;
     private LocalDate foundationDate;
-    private byte[] avatar;
 }

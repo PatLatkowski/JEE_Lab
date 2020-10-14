@@ -8,6 +8,8 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,21 +28,16 @@ public class RecordCompanyService {
 
     public void create(RecordCompany recordCompany) { repository.create(recordCompany); }
 
-    public void updateAvatar(Long id, InputStream is) {
-        repository.find(id).ifPresent(recordCompany -> {
-            try {
-                recordCompany.setAvatar(is.readAllBytes());
-                repository.update(recordCompany);
-            } catch (IOException ex) {
-                throw new IllegalStateException(ex);
-            }
-        });
+    public void postAvatar(Path path, InputStream inputStream) throws IOException {
+        Files.write(path, inputStream.readAllBytes());
     }
 
-    public void deleteAvatar(Long id) {
-        repository.find(id).ifPresent(recordCompany -> {
-            recordCompany.setAvatar(null);
-            repository.update(recordCompany);
-        });
+    public void updateAvatar(Path path, InputStream inputStream) throws IOException {
+        Files.delete(path);
+        Files.write(path, inputStream.readAllBytes());
+    }
+
+    public void deleteAvatar(Path path) throws IOException {
+        Files.delete(path);
     }
 }
