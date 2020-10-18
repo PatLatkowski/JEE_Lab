@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import javax.ws.rs.core.HttpHeaders;
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -116,7 +115,7 @@ public class RecordCompanyAvatarServlet extends HttpServlet {
         if(recordCompany.isPresent()){
             Part avatar = request.getPart(Param.AVATAR);
             if(avatar != null) {
-                if(!Files.exists(path)) {
+                if(!Files.exists(path) && avatar.getInputStream().readAllBytes().length > 0) {
                     service.postAvatar(path, avatar.getInputStream());
                 } else {
                     response.sendError(HttpServletResponse.SC_BAD_REQUEST);
@@ -136,7 +135,7 @@ public class RecordCompanyAvatarServlet extends HttpServlet {
         if(recordCompany.isPresent()){
             Part avatar = request.getPart(Param.AVATAR);
             if(avatar != null) {
-                if(Files.exists(path)) {
+                if(Files.exists(path) && avatar.getInputStream().readAllBytes().length > 0) {
                     service.updateAvatar(path, avatar.getInputStream());
                 } else {
                     response.sendError(HttpServletResponse.SC_BAD_REQUEST);

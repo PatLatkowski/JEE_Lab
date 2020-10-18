@@ -44,7 +44,6 @@ public class RecordCompanyServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String path = ServletUtility.parseRequestPath(request);
-        String servletPath = request.getServletPath();
         if (path.matches(Patterns.COMPANY)) {
             getCompany(request, response);
             return;

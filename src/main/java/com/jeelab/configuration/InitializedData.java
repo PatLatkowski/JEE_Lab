@@ -1,13 +1,10 @@
 package com.jeelab.configuration;
 import com.jeelab.recordcompany.service.RecordCompanyService;
 import com.jeelab.recordcompany.entity.RecordCompany;
-import lombok.SneakyThrows;
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.context.Initialized;
 import javax.enterprise.event.Observes;
 import javax.inject.Inject;
-import java.io.IOException;
-import java.io.InputStream;
 import java.time.LocalDate;
 
 @ApplicationScoped
@@ -44,18 +41,17 @@ public class InitializedData {
                 .email("IslandRecordsl@gmail.com")
                 .foundationDate(LocalDate.of(2012,3,3))
                 .build();
+        RecordCompany recordCompany4 = RecordCompany.builder()
+                .id(4L)
+                .username("Virgin Records")
+                .password("123456")
+                .email("Virgin Records@gmail.com")
+                .foundationDate(LocalDate.of(2011,4,4))
+                .build();
         recordCompanyService.create(recordCompany);
         recordCompanyService.create(recordCompany2);
         recordCompanyService.create(recordCompany3);
+        recordCompanyService.create(recordCompany4);
     }
 
-    @SneakyThrows
-    private byte[] getResourceAsByteArray(String name) {
-        try (InputStream is = this.getClass().getResourceAsStream(name)) {
-            return is.readAllBytes();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
 }
