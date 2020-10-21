@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <f:view>
+        <h:head>
+            <meta charset="UTF-8"/>
+            <meta name="description" content="JEE Lab web application"/>
+            <meta name="keywords" content="JEE Lab"/>
+            <meta name="author" content="Patryk Latkowski"/>
+            <title>Simple RPG</title>
+
+            <h:outputStylesheet library="default" name="css/styles.css"/>
+        </h:head>
+        <h:body>
+            <h:graphicImage library="default" name="images/page-logo.png"></h:graphicImage>
+            <div class="container">
+                <header class="header">
+                    <h1>Record Company app</h1>
+                    <p>Basic information about my app</p>
+                </header>
+
+                <nav class="navigation-bar">
+                    <ul>
+                        <li><h:link outcome="/index.xhtml">main</h:link></li>
+                        <li><h:link outcome="/artist/artist_list.xhtml">artists</h:link></li>
+                    </ul>
+                </nav>
+
+                <section class="main-section">
+                    <ui:insert name="content"/>
+                </section>
+
+                <footer class="footer">
+                    <p>Laboratorium JEE</p>
+                </footer>
+            </div>
+        </h:body>
+    </f:view>
+</html>

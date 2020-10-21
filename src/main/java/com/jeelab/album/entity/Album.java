@@ -1,6 +1,6 @@
-package com.jeelab.album;
+package com.jeelab.album.entity;
 
-import com.jeelab.artist.Artist;
+import com.jeelab.artist.entity.Artist;
 import com.jeelab.recordcompany.entity.RecordCompany;
 
 import java.io.Serializable;
@@ -16,8 +16,9 @@ import lombok.*;
 @EqualsAndHashCode
 @Builder
 public class Album implements Serializable {
+    private Long id;
     private String name;
-    private LocalDate releasedate;
+    private LocalDate releaseDate;
     private RecordCompany recordCompany;
     private Artist artist;
 }

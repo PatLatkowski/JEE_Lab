@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                template="/WEB-INF/template/main.xhtml">
+
+    <f:metadata>
+        <f:viewParam name="id" value="#{artistView.id}" required="true"/>
+        <f:viewAction action="#{artistView.init()}"/>
+    </f:metadata>
+
+    <ui:define name="content">
+        <h:outputStylesheet library="artist" name="css/artist_view.css"/><!-- Automatically relocated to head. -->
+        <article class="text--justified">
+            <header><h2><h:outputText value="#{artistView.artist.name}"/></h2></header>
+            <div class="character__grid">
+                <div class="character__level_profession">
+                    Birthday: <h:outputText value="#{artistView.artist.birthday}"/>
+                </div>
+                <div class="character__level_profession">
+                    Genre: <h:outputText value="#{artistView.artist.genre}"/>
+                </div>
+                <div class="character__level_profession">
+                    Contracted:
+                    <h:outputText value="Yes" rendered="#{artistView.artist.contracted}"/>
+                    <h:outputText value="No" rendered="#{!artistView.artist.contracted}"/>
+                </div>
+            </div>
+        </article>
+        <article class="text--justified">
+            <header><h2>Artist's albums</h2></header>
+            <h:dataTable value="#{albumList.getAlbums(artistView.id).albums}" var="album" styleClass="data-table">
+                <h:column>
+                    <f:facet name="header">name</f:facet>
+                    <h:outputText value="#{album.name}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">view</f:facet>
+                    <h:link outcome="/album/album_view.xhtml" value="view">
+                        <f:param name="id" value="#{album.id}"/>
+                    </h:link>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">delete</f:facet>
+                    <h:form>
+                        <h:commandButton styleClass="ui-button ui-control" value="delete"
+                                         action="#{albumList.deleteAction2(album)}"/>
+                    </h:form>
+                </h:column>
+
+            </h:dataTable>
+        </article>
+    </ui:define>
+
+</ui:composition>

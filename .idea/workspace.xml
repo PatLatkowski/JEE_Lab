@@ -14,11 +14,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999e7765-71d9-44a0-a49b-022fe1aad3f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/model/AlbumModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/model/AlbumsModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/repository/AlbumRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/service/AlbumService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/view/AlbumList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/view/AlbumView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/model/ArtistModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/model/ArtistsModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/repository/ArtistRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/service/ArtistService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/view/ArtistList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/view/ArtistView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/template/main.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/album/album_view.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/artist/artist_list.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/artist/artist_view.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/album/css/album_view.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/artist/css/artist_view.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/default/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/album/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/entity/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/entity/Artist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/configuration/InitializedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/configuration/InitializedData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/entity/RecordCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/entity/RecordCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/service/RecordCompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/service/RecordCompanyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/servlet/RecordCompanyAvatarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/servlet/RecordCompanyAvatarServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/datastore/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/datastore/DataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/liberty/config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/liberty/config/server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +56,7 @@
         <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -53,23 +79,43 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/album" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="android.dex.compiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp" />
-      <recent name="D:\_Projekty\JEE_Lab\src\main" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp" />
       <recent name="D:\_Projekty\JEE_Lab\src\main" />
       <recent name="D:\_Projekty\JEE_Lab\src\webapp" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp\album" />
+      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp\artist" />
+      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp\WEB-INF" />
+      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp" />
+      <recent name="D:\_Projekty\JEE_Lab\src\main" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -94,6 +140,9 @@
       <workItem from="1602690532231" duration="6254000" />
       <workItem from="1602752934606" duration="973000" />
       <workItem from="1602777625415" duration="2276000" />
+      <workItem from="1603204534157" duration="10252000" />
+      <workItem from="1603283424050" duration="3271000" />
+      <workItem from="1603298625522" duration="14944000" />
     </task>
     <servers />
   </component>
@@ -122,29 +171,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="782" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602435652757" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602690509950">
+    <state x="485" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603309697924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602690509950" />
-    <state width="1877" height="304" key="GridCell.Tab.0.bottom" timestamp="1602780505620">
+    <state x="485" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603309697924" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603283459626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602697089938" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603283459626" />
+    <state width="1877" height="140" key="GridCell.Tab.0.bottom" timestamp="1603313773161">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="140" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603313773161" />
     <state width="1877" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
-    <state width="1877" height="304" key="GridCell.Tab.0.center" timestamp="1602780505620">
+    <state width="1877" height="140" key="GridCell.Tab.0.center" timestamp="1603313773161">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602697089938" />
+    <state width="1877" height="140" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603313773161" />
     <state width="1877" height="304" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
-    <state width="1877" height="304" key="GridCell.Tab.0.left" timestamp="1602780505620">
+    <state width="1877" height="140" key="GridCell.Tab.0.left" timestamp="1603313773161">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602697089938" />
+    <state width="1877" height="140" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603313773161" />
     <state width="1877" height="304" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
-    <state width="1877" height="304" key="GridCell.Tab.0.right" timestamp="1602780505620">
+    <state width="1877" height="140" key="GridCell.Tab.0.right" timestamp="1603313773161">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602697089938" />
+    <state width="1877" height="140" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603313773161" />
     <state width="1877" height="304" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1602436225703">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -163,10 +216,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602425058414" />
+    <state x="227" y="145" width="1485" height="910" key="dock-window-1" timestamp="1603210117959">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="227" y="145" width="1485" height="910" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603210117959" />
     <state x="342" y="215" key="new project wizard" timestamp="1602426631705">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="342" y="215" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602426631705" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1603301474522">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603301474522" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602753911708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
