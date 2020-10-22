@@ -14,36 +14,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999e7765-71d9-44a0-a49b-022fe1aad3f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/model/AlbumModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/model/AlbumsModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/repository/AlbumRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/service/AlbumService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/view/AlbumList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/view/AlbumView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/model/ArtistModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/model/ArtistsModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/repository/ArtistRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/service/ArtistService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/view/ArtistList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/view/ArtistView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/template/main.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/album/album_view.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/artist/artist_list.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/artist/artist_view.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/album/css/album_view.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/artist/css/artist_view.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/default/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/model/AlbumCreateModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/model/AlbumEditModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/view/AlbumCreate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/view/AlbumEdit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/album/album_create.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/album/album_edit.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/album/css/album_create.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/album/css/album_edit.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/album/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/entity/Album.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/entity/Artist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/configuration/InitializedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/configuration/InitializedData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/datastore/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/datastore/DataStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/liberty/config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/liberty/config/server.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/album/view/AlbumList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/view/AlbumList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/artist/artist_view.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/artist/artist_view.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,11 +72,6 @@
     <property name="settings.editor.selected.configurable" value="android.dex.compiler" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp" />
-      <recent name="D:\_Projekty\JEE_Lab\src\main" />
-      <recent name="D:\_Projekty\JEE_Lab\src\webapp" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\_Projekty\JEE_Lab\src\main\webapp\album" />
       <recent name="D:\_Projekty\JEE_Lab\src\main\webapp\artist" />
@@ -103,15 +79,24 @@
       <recent name="D:\_Projekty\JEE_Lab\src\main\webapp" />
       <recent name="D:\_Projekty\JEE_Lab\src\main" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp\resources\album\css" />
+      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp\album" />
+      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp" />
+      <recent name="D:\_Projekty\JEE_Lab\src\main" />
+      <recent name="D:\_Projekty\JEE_Lab\src\webapp" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,6 +147,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="733" y="59" key="#Auto_Import" timestamp="1603372539625">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="733" y="59" key="#Auto_Import/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603372539625" />
     <state x="552" y="178" key="#Project_Structure" timestamp="1602753060060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -171,33 +160,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="782" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602435652757" />
-    <state x="485" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603309697924">
+    <state x="485" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603367809813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="485" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603309697924" />
+    <state x="485" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603367809813" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603283459626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603283459626" />
-    <state width="1877" height="140" key="GridCell.Tab.0.bottom" timestamp="1603313773161">
+    <state width="1877" height="201" key="GridCell.Tab.0.bottom" timestamp="1603374402380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="140" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603313773161" />
+    <state width="1877" height="201" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603374402380" />
     <state width="1877" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
-    <state width="1877" height="140" key="GridCell.Tab.0.center" timestamp="1603313773161">
+    <state width="1877" height="201" key="GridCell.Tab.0.center" timestamp="1603374402380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="140" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603313773161" />
+    <state width="1877" height="201" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603374402380" />
     <state width="1877" height="304" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
-    <state width="1877" height="140" key="GridCell.Tab.0.left" timestamp="1603313773161">
+    <state width="1877" height="201" key="GridCell.Tab.0.left" timestamp="1603374402380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="140" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603313773161" />
+    <state width="1877" height="201" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603374402380" />
     <state width="1877" height="304" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
-    <state width="1877" height="140" key="GridCell.Tab.0.right" timestamp="1603313773161">
+    <state width="1877" height="201" key="GridCell.Tab.0.right" timestamp="1603374402380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="140" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603313773161" />
+    <state width="1877" height="201" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603374402380" />
     <state width="1877" height="304" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1602436225703">
       <screen x="0" y="0" width="1920" height="1040" />

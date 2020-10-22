@@ -33,7 +33,7 @@ public class AlbumList implements Serializable {
         return albums;
     }
 
-    public String deleteAction2(AlbumsModel.ShortenedAlbum album) {
+    public String deleteAction(AlbumsModel.ShortenedAlbum album) {
         albumService.delete(album.getId());
         return "artist_list?faces-redirect=true";
     }

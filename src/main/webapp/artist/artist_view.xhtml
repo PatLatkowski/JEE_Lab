@@ -42,14 +42,24 @@
                     </h:link>
                 </h:column>
                 <h:column>
+                    <f:facet name="header">edit</f:facet>
+                    <h:link outcome="/album/album_edit.xhtml" value="edit">
+                        <f:param name="id" value="#{album.id}"/>
+                    </h:link>
+                </h:column>
+                <h:column>
                     <f:facet name="header">delete</f:facet>
                     <h:form>
                         <h:commandButton styleClass="ui-button ui-control" value="delete"
-                                         action="#{albumList.deleteAction2(album)}"/>
+                                         action="#{albumList.deleteAction(album)}"/>
                     </h:form>
                 </h:column>
-
             </h:dataTable>
+            <h:column>
+                <f:facet name="header">Create</f:facet>
+                <h:button styleClass="ui-button ui-control" outcome="/album/album_create.xhtml"
+                          value="Create new album"/>
+            </h:column>
         </article>
     </ui:define>
 
