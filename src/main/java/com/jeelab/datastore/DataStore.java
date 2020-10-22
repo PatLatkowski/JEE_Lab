@@ -5,7 +5,6 @@ import com.jeelab.artist.entity.Artist;
 import com.jeelab.recordcompany.entity.RecordCompany;
 import lombok.extern.java.Log;
 import com.jeelab.serialization.CloningUtility;
-
 import javax.enterprise.context.ApplicationScoped;
 import java.util.*;
 import java.util.stream.Collectors;

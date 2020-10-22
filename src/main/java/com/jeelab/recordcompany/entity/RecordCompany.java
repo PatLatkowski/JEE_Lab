@@ -1,7 +1,6 @@
 package com.jeelab.recordcompany.entity;
 
 import lombok.*;
-
 import java.io.Serializable;
 import java.time.LocalDate;
 

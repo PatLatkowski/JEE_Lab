@@ -2,7 +2,6 @@ package com.jeelab.artist.view;
 
 import com.jeelab.artist.model.ArtistsModel;
 import com.jeelab.artist.service.ArtistService;
-import javax.enterprise.context.RequestScoped;
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;

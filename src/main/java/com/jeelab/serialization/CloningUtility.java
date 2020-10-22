@@ -1,7 +1,6 @@
 package com.jeelab.serialization;
 
 import lombok.extern.java.Log;
-
 import java.io.*;
 import java.util.logging.Level;
 

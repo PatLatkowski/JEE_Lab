@@ -6,7 +6,6 @@ import com.jeelab.recordcompany.dto.GetRecordCompanyResponse;
 import com.jeelab.recordcompany.entity.RecordCompany;
 import com.jeelab.recordcompany.service.RecordCompanyService;
 import com.jeelab.servlet.ServletUtility;
-
 import javax.inject.Inject;
 import javax.json.bind.Jsonb;
 import javax.json.bind.JsonbBuilder;

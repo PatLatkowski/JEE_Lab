@@ -3,7 +3,6 @@ package com.jeelab.recordcompany.service;
 import com.jeelab.recordcompany.entity.RecordCompany;
 import lombok.NoArgsConstructor;
 import com.jeelab.recordcompany.repository.RecordCompanyRepository;
-
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import java.io.IOException;

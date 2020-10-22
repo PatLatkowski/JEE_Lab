@@ -10,21 +10,25 @@
         <article class="text--justified">
             <header><h2>Create album</h2></header>
             <h:form class="album__form">
-                <h:outputLabel for="id" value="Id:"/>
-                <h:inputText class="ui-control ui-input" id="id" value="#{albumCreate.albumCreateModel.id}"/>
-
-                <h:outputLabel for="name" value="Name:"/>
-                <h:inputText class="ui-control ui-input" id="name" value="#{albumCreate.albumCreateModel.name}"/>
-
-                <h:outputLabel for="releaseDate" value="ReleaseDate:"/>
-                <h:inputText class="ui-control ui-input" id="releaseDate" value="#{albumCreate.albumCreateModel.releaseDate}"/>
-
-                <h:selectOneMenu  id="artist" value="#{albumCreate.albumCreateModel.artist}"
-                                  layout="pageDirection">
-                    <f:selectItems var="artist" value="#{albumCreate.artistModelList}" itemValue="#{artist.id}"
-                                   itemLabel="#{artist.name}" itemLabelEscaped="false"/>
-                </h:selectOneMenu >
-
+                <div class="input">
+                    <h:outputLabel for="id" value="Id:"/>
+                    <h:inputText class="ui-control ui-input" id="id" value="#{albumCreate.albumCreateModel.id}"/>
+                </div>
+                <div class="input">
+                    <h:outputLabel for="name" value="Name:"/>
+                    <h:inputText class="ui-control ui-input" id="name" value="#{albumCreate.albumCreateModel.name}"/>
+                </div>
+                <div class="input">
+                    <h:outputLabel for="releaseDate" value="ReleaseDate:"/>
+                    <h:inputText class="ui-control ui-input" id="releaseDate" value="#{albumCreate.albumCreateModel.releaseDate}"/>
+                </div>
+                <div class="input">
+                    <h:selectOneMenu  id="artist" value="#{albumCreate.albumCreateModel.artist}"
+                                      layout="pageDirection">
+                        <f:selectItems var="artist" value="#{albumCreate.artistModelList}" itemValue="#{artist.id}"
+                                       itemLabel="#{artist.name}" itemLabelEscaped="false"/>
+                    </h:selectOneMenu >
+                </div>
                 <h:commandButton class="ui-control ui-button" value="Create"
                                  action="#{albumCreate.saveAction()}"/>
             </h:form>

@@ -1,7 +1,6 @@
 package com.jeelab.album.repository;
 
 import com.jeelab.album.entity.Album;
-import com.jeelab.artist.entity.Artist;
 import com.jeelab.datastore.DataStore;
 import com.jeelab.repository.Repository;
 

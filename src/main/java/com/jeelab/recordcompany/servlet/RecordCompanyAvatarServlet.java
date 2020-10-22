@@ -3,7 +3,6 @@ package com.jeelab.recordcompany.servlet;
 import com.jeelab.recordcompany.entity.RecordCompany;
 import com.jeelab.recordcompany.service.RecordCompanyService;
 import com.jeelab.servlet.ServletUtility;
-
 import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;

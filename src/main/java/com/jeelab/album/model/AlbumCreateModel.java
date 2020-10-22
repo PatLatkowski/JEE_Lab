@@ -2,7 +2,6 @@ package com.jeelab.album.model;
 
 import com.jeelab.album.entity.Album;
 import com.jeelab.artist.entity.Artist;
-import com.jeelab.recordcompany.entity.RecordCompany;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -21,7 +20,6 @@ public class AlbumCreateModel {
     private String name;
     private String releaseDate;
     private Long artist;
-
 
     public static Function<AlbumCreateModel, Album> modelToEntityMapper(
             Function<Long, Artist> artistFunction

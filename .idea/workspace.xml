@@ -14,17 +14,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999e7765-71d9-44a0-a49b-022fe1aad3f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/model/AlbumCreateModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/model/AlbumEditModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/view/AlbumCreate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/view/AlbumEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/album/album_create.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/album/album_edit.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/album/css/album_create.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/album/css/album_edit.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/album/model/AlbumCreateModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/model/AlbumCreateModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/album/repository/AlbumRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/repository/AlbumRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/album/view/AlbumList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/view/AlbumList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/artist/artist_view.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/artist/artist_view.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/album/view/AlbumView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/view/AlbumView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/model/ArtistModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/model/ArtistModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/model/ArtistsModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/model/ArtistsModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/repository/ArtistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/repository/ArtistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/service/ArtistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/service/ArtistService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/view/ArtistList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/view/ArtistList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/view/ArtistView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/view/ArtistView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/datastore/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/datastore/DataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/entity/RecordCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/entity/RecordCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/repository/RecordCompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/repository/RecordCompanyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/service/RecordCompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/service/RecordCompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/servlet/RecordCompanyAvatarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/servlet/RecordCompanyAvatarServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/servlet/RecordCompanyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/servlet/RecordCompanyServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/serialization/CloningUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/serialization/CloningUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/template/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/template/main.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/album/album_create.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/album/album_create.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/album/album_edit.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/album/album_edit.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/default/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/default/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,25 +179,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603283459626" />
-    <state width="1877" height="201" key="GridCell.Tab.0.bottom" timestamp="1603374402380">
+    <state width="1877" height="201" key="GridCell.Tab.0.bottom" timestamp="1603379070802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="201" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603374402380" />
+    <state width="1877" height="201" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603379070802" />
     <state width="1877" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
-    <state width="1877" height="201" key="GridCell.Tab.0.center" timestamp="1603374402380">
+    <state width="1877" height="201" key="GridCell.Tab.0.center" timestamp="1603379070802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="201" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603374402380" />
+    <state width="1877" height="201" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603379070802" />
     <state width="1877" height="304" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
-    <state width="1877" height="201" key="GridCell.Tab.0.left" timestamp="1603374402380">
+    <state width="1877" height="201" key="GridCell.Tab.0.left" timestamp="1603379070802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="201" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603374402380" />
+    <state width="1877" height="201" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603379070802" />
     <state width="1877" height="304" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
-    <state width="1877" height="201" key="GridCell.Tab.0.right" timestamp="1603374402380">
+    <state width="1877" height="201" key="GridCell.Tab.0.right" timestamp="1603379070802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="201" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603374402380" />
+    <state width="1877" height="201" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603379070802" />
     <state width="1877" height="304" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1602436225703">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -213,10 +224,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="342" y="215" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602426631705" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1603301474522">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1603376873643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603301474522" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603376873643" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602753911708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -3,7 +3,6 @@ package com.jeelab.recordcompany.repository;
 import com.jeelab.recordcompany.entity.RecordCompany;
 import com.jeelab.datastore.DataStore;
 import com.jeelab.repository.Repository;
-
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 import java.util.List;

@@ -2,7 +2,6 @@ package com.jeelab.artist.model;
 
 import com.jeelab.artist.entity.Artist;
 import lombok.*;
-
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;

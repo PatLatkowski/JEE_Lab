@@ -3,7 +3,6 @@ package com.jeelab.artist.service;
 import com.jeelab.artist.entity.Artist;
 import com.jeelab.artist.repository.ArtistRepository;
 import lombok.NoArgsConstructor;
-
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import java.util.List;

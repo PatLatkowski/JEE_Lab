@@ -5,8 +5,6 @@ import com.jeelab.album.model.AlbumModel;
 import com.jeelab.album.service.AlbumService;
 import lombok.Getter;
 import lombok.Setter;
-
-import javax.enterprise.context.RequestScoped;
 import javax.faces.context.FacesContext;
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
