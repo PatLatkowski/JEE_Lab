@@ -26,7 +26,7 @@ public class AlbumRepository implements Repository<Album, Long> {
     public List<Album> findAllArtistAlbum(Long id) { return store.findAllArtistAlbum(id); }
 
     @Override
-    public void create(Album album) { store.createAlbum(album); }
+    public Album create(Album album) { return store.createAlbum(album); }
 
     @Override
     public void delete(Album album) { store.deleteAlbum(album.getId()); }

@@ -21,7 +21,7 @@ public class ArtistService {
 
     public List<Artist> findAll() { return artistRepository.findAll(); }
 
-    public void create(Artist artist) { artistRepository.create(artist); }
+    public Artist create(Artist artist) { return artistRepository.create(artist); }
 
     public void update(Artist artist) { artistRepository.update(artist); }
 

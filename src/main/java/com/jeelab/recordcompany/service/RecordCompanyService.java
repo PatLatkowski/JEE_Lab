@@ -25,7 +25,7 @@ public class RecordCompanyService {
 
     public List<RecordCompany> findAll() { return repository.findAll(); }
 
-    public void create(RecordCompany recordCompany) { repository.create(recordCompany); }
+    public RecordCompany create(RecordCompany recordCompany) { return repository.create(recordCompany); }
 
     public void postAvatar(Path path, InputStream inputStream) throws IOException {
         Files.write(path, inputStream.readAllBytes());

@@ -22,7 +22,7 @@ public class AlbumService {
 
     public List<Album> findAllArtistAlbum(Long id) { return albumRepository.findAllArtistAlbum(id); }
 
-    public void create(Album album) { albumRepository.create(album); }
+    public Album create(Album album) { return albumRepository.create(album); }
 
     public void update(Album album) { albumRepository.update(album); }
 

@@ -23,7 +23,7 @@ public class ArtistRepository implements Repository<Artist, Long> {
     public List<Artist> findAll() { return store.findAllArtists(); }
 
     @Override
-    public void create(Artist artist) { store.createArtist(artist); }
+    public Artist create(Artist artist) { return store.createArtist(artist); }
 
     @Override
     public void delete(Artist artist) { store.deleteArtist(artist.getId()); }

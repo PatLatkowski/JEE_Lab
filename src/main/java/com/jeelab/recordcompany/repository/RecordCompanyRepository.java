@@ -23,7 +23,7 @@ public class RecordCompanyRepository implements Repository<RecordCompany, Long> 
     public List<RecordCompany> findAll() { return store.findAllRecordCompanies(); }
 
     @Override
-    public void create(RecordCompany recordCompany) { store.createRecordCompany(recordCompany); }
+    public RecordCompany create(RecordCompany recordCompany) { return store.createRecordCompany(recordCompany); }
 
     @Override
     public void delete(RecordCompany recordCompany) { throw new UnsupportedOperationException("Not implemented."); }

@@ -3,6 +3,8 @@ package com.jeelab.datastore;
 import com.jeelab.album.entity.Album;
 import com.jeelab.artist.entity.Artist;
 import com.jeelab.recordcompany.entity.RecordCompany;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.java.Log;
 import com.jeelab.serialization.CloningUtility;
 import javax.enterprise.context.ApplicationScoped;
@@ -17,27 +19,45 @@ public class DataStore {
     private Set<Artist> artists = new HashSet<>();
     private Set<Album> albums = new HashSet<>();
 
+    @Getter
+    @Setter
+    private Long lastArtistId = 0L;
+
+    @Getter
+    @Setter
+    private Long lastRecordCompanyId = 0L;
+
+    @Getter
+    @Setter
+    private Long lastAlbumId = 0L;
+
+
     /**
      * RecordCompany entity functions
      */
 
-    public synchronized List<RecordCompany> findAllRecordCompanies() {
+    public List<RecordCompany> findAllRecordCompanies() {
         return recordCompanies.stream().map(CloningUtility::clone).collect(Collectors.toList());
     }
 
-    public synchronized Optional<RecordCompany> findRecordCompany(Long id) {
+    public Optional<RecordCompany> findRecordCompany(Long id) {
         return recordCompanies.stream()
                 .filter(recordCompany -> recordCompany.getId().equals(id))
                 .findFirst()
                 .map(CloningUtility::clone);
     }
 
-    public synchronized void createRecordCompany(RecordCompany recordCompany) throws IllegalArgumentException {
+    public synchronized RecordCompany createRecordCompany(RecordCompany recordCompany) throws IllegalArgumentException {
         findRecordCompany(recordCompany.getId()).ifPresentOrElse(original -> {
             throw new IllegalArgumentException(
                     String.format("The user login \"%s\" is not unique", recordCompany.getId()));
         },
-        () -> recordCompanies.add(recordCompany));
+        () -> {
+            lastRecordCompanyId += 1;
+            recordCompany.setId(lastRecordCompanyId);
+            recordCompanies.add(recordCompany);
+        });
+        return recordCompany;
     }
 
     public synchronized void updateRecordCompany(RecordCompany recordCompany) throws IllegalArgumentException {
@@ -57,23 +77,29 @@ public class DataStore {
      * Artist entity functions
      */
 
-    public synchronized List<Artist> findAllArtists() {
-        return artists.stream().map(CloningUtility::clone).collect(Collectors.toList());
+    public List<Artist> findAllArtists() {
+        return artists.stream().map(CloningUtility::clone)
+                .collect(Collectors.toList());
     }
 
-    public synchronized Optional<Artist> findArtist(Long id) {
+    public Optional<Artist> findArtist(Long id) {
         return artists.stream()
                 .filter(artist -> artist.getId().equals(id))
                 .findFirst()
                 .map(CloningUtility::clone);
     }
 
-    public synchronized void createArtist(Artist artist) throws IllegalArgumentException {
+    public synchronized Artist createArtist(Artist artist) throws IllegalArgumentException {
         findArtist(artist.getId()).ifPresentOrElse(original -> {
                     throw new IllegalArgumentException(
                             String.format("The artist id \"%s\" is not unique", artist.getId()));
                 },
-                () -> artists.add(artist));
+                () -> {
+                    lastArtistId += 1;
+                    artist.setId(lastArtistId);
+                    artists.add(artist);
+                });
+        return artist;
     }
 
     public synchronized void updateArtist(Artist artist) throws IllegalArgumentException {
@@ -105,26 +131,31 @@ public class DataStore {
      * Album entity functions
      */
 
-    public synchronized List<Album> findAllArtistAlbum(Long id) {
+    public List<Album> findAllArtistAlbum(Long id) {
         return albums.stream()
                 .filter(album -> album.getArtist().getId().equals(id))
                 .map(CloningUtility::clone)
                 .collect(Collectors.toList());
     }
 
-    public synchronized Optional<Album> findAlbum(Long id) {
+    public Optional<Album> findAlbum(Long id) {
         return albums.stream()
                 .filter(album -> album.getId().equals(id))
                 .findFirst()
                 .map(CloningUtility::clone);
     }
 
-    public synchronized void createAlbum(Album album) throws IllegalArgumentException {
+    public synchronized Album createAlbum(Album album) throws IllegalArgumentException {
         findAlbum(album.getId()).ifPresentOrElse(original -> {
-                    throw new IllegalArgumentException(
-                            String.format("The album id \"%s\" is not unique", album.getId()));
-                },
-                () -> albums.add(album));
+                throw new IllegalArgumentException(
+                        String.format("The album id \"%s\" is not unique", album.getId()));
+            },
+            () -> {
+                lastAlbumId += 1;
+                album.setId(lastAlbumId);
+                albums.add(album);
+            });
+        return album;
     }
 
     public synchronized void updateAlbum(Album album) throws IllegalArgumentException {
