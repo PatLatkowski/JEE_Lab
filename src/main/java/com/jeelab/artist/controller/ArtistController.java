@@ -36,7 +36,8 @@ public class ArtistController {
     public Response getArtist(@PathParam("id") Long id) {
         Optional<Artist> artist = artistService.find(id);
         if(artist.isPresent()) {
-            return Response.ok(GetArtistResponse.entityToDtoMapper().apply(artist.get())).build();
+            return Response.ok(GetArtistResponse.entityToDtoMapper()
+                    .apply(artist.get())).build();
         } else {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
@@ -44,7 +45,6 @@ public class ArtistController {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
     public Response postArtist(PostArtistRequest request) {
         Long createdArtistId = artistService.create(PostArtistRequest.dtoToEntityMapper().apply(request)).getId();
         return Response.created(UriBuilder.fromMethod(ArtistController.class, "getArtist")
