@@ -92,7 +92,7 @@ public class AlbumController {
         if(response != null)
             return response;
         Optional<Album> album = albumService.find(albumId);
-        PutAlbumRequest.dtoToEntityUpdater(artist -> artistService.find(artistId).orElseThrow())
+        PutAlbumRequest.dtoToEntityUpdater()
                 .apply(album.get(), putAlbumRequest);
         albumService.update(album.get());
         return Response.ok().build();

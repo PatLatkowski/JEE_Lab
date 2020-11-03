@@ -18,15 +18,12 @@ import java.util.function.Function;
 public class PutAlbumRequest {
     private String name;
     private String releaseDate;
-    private Long artist;
 
-    public static BiFunction<Album, PutAlbumRequest, Album> dtoToEntityUpdater(
-            Function<Long, Artist> artistFunction
-    ) {
+    public static BiFunction<Album, PutAlbumRequest, Album> dtoToEntityUpdater()
+    {
         return ((album, putAlbumRequest) -> {
             album.setName(putAlbumRequest.getName());
             album.setReleaseDate(LocalDate.parse(putAlbumRequest.getReleaseDate()));
-            album.setArtist(artistFunction.apply(putAlbumRequest.getArtist()));
             return album;
         });
     }

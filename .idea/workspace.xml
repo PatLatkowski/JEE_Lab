@@ -14,13 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999e7765-71d9-44a0-a49b-022fe1aad3f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/controller/AlbumController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/dto/GetArtistAlbumResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/dto/GetArtistAlbumsResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/dto/PostAlbumRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/dto/PutAlbumRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/controller/ArtistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/controller/ArtistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/album/controller/AlbumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/controller/AlbumController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/album/dto/PutAlbumRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/dto/PutAlbumRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +56,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="E:/simple-rpg-cdi+jsf+jax-rs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
@@ -83,21 +79,6 @@
       <recent name="D:\_Projekty\JEE_Lab\src\main" />
       <recent name="D:\_Projekty\JEE_Lab\src\webapp" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -126,6 +107,7 @@
       <workItem from="1603283424050" duration="3271000" />
       <workItem from="1603298625522" duration="14944000" />
       <workItem from="1603620076633" duration="10553000" />
+      <workItem from="1604411802510" duration="1007000" />
     </task>
     <servers />
   </component>
