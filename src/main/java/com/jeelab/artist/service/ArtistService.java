@@ -5,6 +5,7 @@ import com.jeelab.artist.repository.ArtistRepository;
 import lombok.NoArgsConstructor;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
@@ -21,10 +22,17 @@ public class ArtistService {
 
     public List<Artist> findAll() { return artistRepository.findAll(); }
 
-    public Artist create(Artist artist) { return artistRepository.create(artist); }
+    @Transactional
+    public void create(Artist artist) { artistRepository.create(artist); }
 
-    public void update(Artist artist) { artistRepository.update(artist); }
+    @Transactional
+    public void update(Artist artist) {
+        Artist originalArtist = artistRepository.find(artist.getId()).orElseThrow();
+        artistRepository.detach(originalArtist);
+        artistRepository.update(artist);
+    }
 
+    @Transactional
     public void delete(Long artist) { artistRepository.delete(artistRepository.find(artist).orElseThrow()); }
 
 }

@@ -7,6 +7,7 @@ import com.jeelab.recordcompany.service.RecordCompanyService;
 import com.jeelab.recordcompany.entity.RecordCompany;
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.context.Initialized;
+import javax.enterprise.context.control.RequestContextController;
 import javax.enterprise.event.Observes;
 import javax.inject.Inject;
 import java.time.LocalDate;
@@ -18,17 +19,22 @@ public class InitializedData {
     private final ArtistService artistService;
     private final AlbumService albumService;
 
+    private RequestContextController requestContextController;
+
     @Inject
-    public InitializedData(RecordCompanyService recordCompanyService, ArtistService artistService, AlbumService albumService) {
+    public InitializedData(RecordCompanyService recordCompanyService, ArtistService artistService,
+                           AlbumService albumService, RequestContextController requestContextController) {
         this.recordCompanyService = recordCompanyService;
         this.artistService = artistService;
         this.albumService = albumService;
+        this.requestContextController = requestContextController;
     }
 
     public void contextInitialized(@Observes @Initialized(ApplicationScoped.class) Object init) { init(); }
 
     private synchronized void init() {
-        RecordCompany recordCompany = RecordCompany.builder()
+        requestContextController.activate(); // start request scope in order to inject request scoped repositories
+        /*RecordCompany recordCompany = RecordCompany.builder()
                 .username("test")
                 .password("123456")
                 .email("email@gmail.com")
@@ -55,7 +61,7 @@ public class InitializedData {
         recordCompanyService.create(recordCompany);
         recordCompanyService.create(recordCompany2);
         recordCompanyService.create(recordCompany3);
-        recordCompanyService.create(recordCompany4);
+        recordCompanyService.create(recordCompany4);*/
 
         Artist artist1 = Artist.builder()
                 .name("Kanye West")
@@ -79,6 +85,7 @@ public class InitializedData {
         artistService.create(artist1);
         artistService.create(artist2);
         artistService.create(artist3);
+
 
         Album album1 = Album.builder()
                 .name("First Tape")
@@ -129,6 +136,7 @@ public class InitializedData {
         albumService.create(album5);
         albumService.create(album6);
 
+        requestContextController.deactivate();
     }
 
 }

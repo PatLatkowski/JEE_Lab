@@ -46,9 +46,12 @@ public class ArtistController {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public Response postArtist(PostArtistRequest request) {
-        Long createdArtistId = artistService.create(PostArtistRequest.dtoToEntityMapper().apply(request)).getId();
+        Artist artist = PostArtistRequest
+                .dtoToEntityMapper()
+                .apply(request);
+        artistService.create(artist);
         return Response.created(UriBuilder.fromMethod(ArtistController.class, "getArtist")
-            .build(createdArtistId)).build();
+            .build(artist.getId())).build();
     }
 
     @DELETE

@@ -66,11 +66,12 @@ public class AlbumController {
         if(artist.isEmpty())
             return Response.status(Response.Status.NOT_FOUND)
                     .entity(String.format("Artist with id \"%d\" not found", artistId)).build();
-        Long createdAlbumId = albumService.create(PostAlbumRequest
+        Album album = PostAlbumRequest
                 .dtoToEntityMapper(artist)
-                .apply(request)).getId();
-        return Response.created(UriBuilder.fromMethod(AlbumController.class, "getArtistAlbums")
-                .build(artistId, createdAlbumId)).build();
+                .apply(request);
+        albumService.create(album);
+        return Response.created(UriBuilder.fromMethod(AlbumController.class, "getArtistAlbum")
+                .build(artistId, album.getId())).build();
     }
 
     @DELETE

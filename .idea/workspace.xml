@@ -14,9 +14,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999e7765-71d9-44a0-a49b-022fe1aad3f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jboss-web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/payara-web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/album/controller/AlbumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/controller/AlbumController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/album/dto/PutAlbumRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/dto/PutAlbumRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/album/entity/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/entity/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/album/repository/AlbumRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/repository/AlbumRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/album/service/AlbumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/album/service/AlbumService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/controller/ArtistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/controller/ArtistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/entity/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/entity/Artist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/repository/ArtistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/repository/ArtistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/service/ArtistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/artist/service/ArtistService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/configuration/InitializedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/configuration/InitializedData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/repository/RecordCompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/repository/RecordCompanyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/service/RecordCompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/recordcompany/service/RecordCompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeelab/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeelab/repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/liberty/config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/liberty/config/server.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +71,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/simple-rpg" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
@@ -65,19 +80,19 @@
     <property name="settings.editor.selected.configurable" value="android.dex.compiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp\album" />
-      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp\artist" />
-      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp\WEB-INF" />
-      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp" />
-      <recent name="D:\_Projekty\JEE_Lab\src\main" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\_Projekty\JEE_Lab\src\main\webapp\resources\album\css" />
       <recent name="D:\_Projekty\JEE_Lab\src\main\webapp\album" />
       <recent name="D:\_Projekty\JEE_Lab\src\main\webapp" />
       <recent name="D:\_Projekty\JEE_Lab\src\main" />
       <recent name="D:\_Projekty\JEE_Lab\src\webapp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp\WEB-INF" />
+      <recent name="D:\_Projekty\JEE_Lab\src\main\resources\META-INF" />
+      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp\album" />
+      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp\artist" />
+      <recent name="D:\_Projekty\JEE_Lab\src\main\webapp" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -108,6 +123,8 @@
       <workItem from="1603298625522" duration="14944000" />
       <workItem from="1603620076633" duration="10553000" />
       <workItem from="1604411802510" duration="1007000" />
+      <workItem from="1604507035145" duration="10303000" />
+      <workItem from="1604582579840" duration="4285000" />
     </task>
     <servers />
   </component>
@@ -127,6 +144,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="859" y="411" width="314" height="217" key="#Assign_Data_Sources" timestamp="1604582939561">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="859" y="411" width="314" height="217" key="#Assign_Data_Sources/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604582939561" />
     <state x="733" y="59" key="#Auto_Import" timestamp="1603372539625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -144,29 +165,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="485" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603367809813" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603620313179">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604582596050">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603620313179" />
-    <state width="1877" height="136" key="GridCell.Tab.0.bottom" timestamp="1603636791638">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604582596050" />
+    <state width="1877" height="335" key="GridCell.Tab.0.bottom" timestamp="1604585858359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="136" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603636791638" />
+    <state width="1877" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604585858359" />
     <state width="1877" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
-    <state width="1877" height="136" key="GridCell.Tab.0.center" timestamp="1603636791637">
+    <state width="1877" height="335" key="GridCell.Tab.0.center" timestamp="1604585858359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="136" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603636791637" />
+    <state width="1877" height="335" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604585858359" />
     <state width="1877" height="304" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
-    <state width="1877" height="136" key="GridCell.Tab.0.left" timestamp="1603636791637">
+    <state width="1877" height="335" key="GridCell.Tab.0.left" timestamp="1604585858359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="136" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603636791637" />
+    <state width="1877" height="335" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604585858359" />
     <state width="1877" height="304" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
-    <state width="1877" height="136" key="GridCell.Tab.0.right" timestamp="1603636791637">
+    <state width="1877" height="335" key="GridCell.Tab.0.right" timestamp="1604585858359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="136" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603636791637" />
+    <state width="1877" height="335" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604585858359" />
     <state width="1877" height="304" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602780505620" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1602436225703">
       <screen x="0" y="0" width="1920" height="1040" />

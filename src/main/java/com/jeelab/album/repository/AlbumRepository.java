@@ -1,36 +1,48 @@
 package com.jeelab.album.repository;
 
 import com.jeelab.album.entity.Album;
+import com.jeelab.artist.entity.Artist;
 import com.jeelab.datastore.DataStore;
 import com.jeelab.repository.Repository;
 
-import javax.enterprise.context.Dependent;
+
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
+import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
+import javax.persistence.PersistenceContext;
 import java.util.List;
 import java.util.Optional;
 
-@Dependent
+@RequestScoped
 public class AlbumRepository implements Repository<Album, Long> {
 
-    private DataStore store;
+    private EntityManager entityManager;
 
-    @Inject
-    public AlbumRepository(DataStore store) { this.store = store; }
-
-    @Override
-    public Optional<Album> find(Long id) { return store.findAlbum(id); }
+    @PersistenceContext
+    public void setEntityManager(EntityManager entityManager) { this.entityManager = entityManager; }
 
     @Override
-    public List<Album> findAll() { throw new UnsupportedOperationException("Not implemented."); }
-
-    public List<Album> findAllArtistAlbum(Long id) { return store.findAllArtistAlbum(id); }
+    public Optional<Album> find(Long id) { return Optional.ofNullable(entityManager.find(Album.class, id)); }
 
     @Override
-    public Album create(Album album) { return store.createAlbum(album); }
+    public List<Album> findAll() { return entityManager.createQuery("select album from Album album", Album.class).getResultList(); }
+
+    public List<Album> findAllArtistAlbum(Artist artist) {
+        return entityManager.createQuery("select album from Album album where album.artist = :artist", Album.class)
+                .setParameter("artist", artist)
+                .getResultList();
+    }
 
     @Override
-    public void delete(Album album) { store.deleteAlbum(album.getId()); }
+    public void create(Album album) { entityManager.persist(album); }
 
     @Override
-    public void update(Album album) { store.updateAlbum(album); }
+    public void delete(Album album) { entityManager.remove(entityManager.find(Album.class, album.getId())); }
+
+    @Override
+    public void update(Album album) { entityManager.merge(album); }
+
+    @Override
+    public void detach(Album album) { entityManager.detach(album); }
 }
